@@ -1,0 +1,8 @@
+Program Etapy:
+
+1. Pliki nagłówkowe
+2. Deklaracja typów zmiennych
+3. Rezerwacja pamięci na tablice
+4. Nadawanie początkowych wartości tablicom
+5. Kod algorytmu
+6. Pomiar czasu
