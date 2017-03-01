@@ -1,0 +1,41 @@
+rozwiazanie{
+padding:20px;
+display: block;
+}
+
+tresc{
+display:block;
+padding:20px !important;
+}
+
+wzor{
+display: block;
+}
+
+naglowek{
+display:block;
+background-color:#353535;
+color:white;
+padding:15px;
+border-top: 2px dashed #0382ed;
+border-bottom: 12px solid #0382ed;
+font-size:30px;
+}
+
+lacze{
+display: block;
+text-decoration:none;
+color:black;
+border-bottom: 1px dashed #c6d2dd;
+padding:10px;
+}
+
+math{
+text-align:center;
+font-size: 21px;
+}
+
+lacze:hover{
+color: #0382ed;
+text-decoration:underline;
+}
