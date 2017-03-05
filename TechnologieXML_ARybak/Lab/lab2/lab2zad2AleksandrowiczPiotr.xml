@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Uczelnia telefon="512321234" email="uczelniawarszawska@uw.pl">
+	<Wydział ulica="Kowalskiego" numer="78">
+		<Nazwa>
+			<PełnaNazwa>Wydział Matematki</PełnaNazwa>
+			<Skrót>UWWM</Skrót>
+		</Nazwa>
+		<Uwagi>Brak</Uwagi>
+	</Wydział>
+	<Wydział ulica="Broniewskiego" numer="32">
+		<Nazwa>
+			<PełnaNazwa>Wydział Biologiczny</PełnaNazwa>
+			<Skrót>UWWB</Skrót>
+		</Nazwa>
+		<Uwagi>Obok znajduje się biblioteka uczelniana</Uwagi>
+	</Wydział>
+	<Wydział ulica="Pułaskiego" numer="10">
+		<Nazwa>
+			<PełnaNazwa>Wydział Pedagogiczny</PełnaNazwa>
+			<Skrót>UWWP</Skrót>
+		</Nazwa>
+		<Uwagi>Wydział znajduje się w Kampusie</Uwagi>
+	</Wydział>
+</Uczelnia>
