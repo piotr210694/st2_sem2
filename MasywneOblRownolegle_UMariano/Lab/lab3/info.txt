@@ -1,0 +1,14 @@
+=============================
+Program ssedemo.c
+Kompilacja SSE:
+gcc -O2 -msse ssedemo.c -o prog -lm
+
+Uruchamianie:
+./prog 100000
+=============================
+
+=============================
+Program lab3.c
+Masywne obliczenia równoległe z zast. metody Monte Carlo
+Zadanie. Oliczyc objetosc elipsoidy o osiach 1, 2, 5 z użyciem biblioteki MPI
+=============================
