@@ -1,0 +1,94 @@
+(defrule startujemy
+    ?x <- (initial-fact)
+    =>
+    (retract ?x) 
+    (printout t crlf)
+    (printout t "*******************" crlf)
+    (printout t "Wybór samochodu..." crlf)
+    (printout t "*******************" crlf)
+    (assert (odpal_reguly))
+    )
+
+(defrule GDZIE_JEZDZISZ
+    ?x <- (odpal_reguly)
+    =>
+    (retract ?x)
+    (printout t crlf)
+    (printout t "Gdzie jeŸdzisz?")
+    (printout t crlf)
+    (printout t "1. Miasto")
+    (printout t crlf)
+    (printout t "2. Teren")
+    (printout t crlf)
+    (printout t "Twoj wybor:")
+    (printout t crlf)
+    (assert(gdzie (read)))
+    (printout t crlf)
+    )
+
+(defrule STYL_JAZDY
+    ?x <- (gdzie 1)
+    =>
+    (printout t "Jaki jest Twój styl jazdy?")
+    (printout t crlf)
+    (printout t "1. Spokojny")
+    (printout t crlf)
+    (printout t "2. Dynamiczny")
+    (printout t crlf)
+    (printout t "Twój wybór:")
+    (printout t crlf)
+    (assert (styljazdy (read)))
+    (printout t crlf)
+    )
+
+(defrule TYP_TERENU
+    ?x <- (gdzie 2)
+    =>
+    (printout t "Wybierz typ terenu")
+    (printout t crlf)
+    (printout t "1. Teren górzysty")
+    (printout t crlf)
+    (printout t "2. Teren b³otnisty")
+    (printout t crlf)
+    (printout t "Twój wybór:")
+    (printout t crlf)
+    (assert (typterenu (read)))
+    (printout t crlf)
+    )
+
+(defrule M1
+    (gdzie 1)
+    (styljazdy 1)
+    =>
+    (assert (samochod Honda Civic))
+    )
+
+(defrule M2
+    (gdzie 1)
+    (styljazdy 2)
+    =>
+    (assert (samochod Audi A8))
+    )
+
+(defrule T1
+   (gdzie 2)
+   (typterenu 1)
+    =>
+    (assert (samochod Jeep Cherokee))
+    )
+
+(defrule T2
+    (gdzie 2)
+    (typterenu 2)
+    =>
+    (assert (samochod Toyota Rav))
+    )
+
+(defrule WYPISZ
+    (samochod $?x)  
+    =>
+    (printout t "Polecamy: " $?x crlf)
+    )
+
+(reset)
+(run)
