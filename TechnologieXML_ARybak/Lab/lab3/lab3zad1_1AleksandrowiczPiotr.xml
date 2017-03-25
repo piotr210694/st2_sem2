@@ -1,0 +1,20 @@
+<!DOCTYPE MistrzostwaŚwiata [
+
+	<!ELEMENT MistrzostwaŚwiata (Rajd+)>
+	<!ELEMENT Rajd (Zawody, OpisRajdu)>
+	<!ELEMENT OpisRajdu (#PCDATA)>
+	<!ELEMENT Zawody (Zaloga)>
+	<!ELEMENT Zaloga (Kierowca, Pilot, Czas)>
+	<!ELEMENT Kierowca (#PCDATA)>
+	<!ELEMENT Pilot (#PCDATA)>
+	<!ELEMENT Czas (#PCDATA)>
+
+	<!ATTLIST Rajd nazwa CDATA #IMPLIED>
+	<!ATTLIST Rajd kraj CDATA #REQUIRED>
+	<!ATTLIST Zawody dataRozpoczecia CDATA #REQUIRED>
+	<!ATTLIST Zawody dataZakonczenia CDATA #REQUIRED>
+	<!ATTLIST Zaloga nazwa CDATA #REQUIRED>
+	<!ATTLIST Zaloga samochod CDATA #IMPLIED>
+	<!ATTLIST Zaloga kraj CDATA #REQUIRED>
+
+]>

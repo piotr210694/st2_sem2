@@ -1,0 +1,15 @@
+<!DOCTYPE Uczelnia [
+
+	<!ELEMENT Uczelnia (Wydział+)>
+	<!ELEMENT Wydział (Nazwa, Uwagi)>
+	<!ELEMENT Uwagi (#PCDATA)>
+	<!ELEMENT Nazwa (PełnaNazwa, Skrót)>
+	<!ELEMENT PełnaNazwa (#PCDATA)>
+	<!ELEMENT Skrót (#PCDATA)>
+
+	<!ATTLIST Uczelnia telefon CDATA #REQUIRED>
+	<!ATTLIST Uczelnia email CDATA #REQUIRED>
+	<!ATTLIST Wydział ulica CDATA #REQUIRED>
+	<!ATTLIST Wydział numer CDATA #REQUIRED>
+
+]>

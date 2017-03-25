@@ -1,0 +1,16 @@
+
+<!ELEMENT Czas ( #PCDATA ) >
+<!ELEMENT Kierowca ( #PCDATA ) >
+
+<!ELEMENT MistrzostwaŒwiata ( #PCDATA | Rajd )* >
+<!ELEMENT OpisRajdu ( #PCDATA ) >
+<!ELEMENT Pilot ( #PCDATA ) >
+<!ELEMENT Rajd ( Zawody, OpisRajdu ) ><!ATTLIST Rajd kraj NMTOKEN #REQUIRED >
+<!ATTLIST Rajd nazwa CDATA #REQUIRED >
+
+<!ELEMENT Zaloga ( Kierowca, Pilot, Czas ) ><!ATTLIST Zaloga narodowoœæ NMTOKEN #REQUIRED >
+<!ATTLIST Zaloga nazwa CDATA #REQUIRED >
+<!ATTLIST Zaloga samochód NMTOKEN #REQUIRED >
+
+<!ELEMENT Zawody ( Zaloga ) ><!ATTLIST Zawody dataRozpoczecia NMTOKEN #REQUIRED >
+<!ATTLIST Zawody dataZakonczenia NMTOKEN #REQUIRED >

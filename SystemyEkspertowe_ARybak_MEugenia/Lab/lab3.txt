@@ -1,0 +1,20 @@
+(clear)
+(deftemplate plyty-glowne (slot nazwa) (slot typ_gniazda) (slot procesor))
+(deffacts zbior_plyt
+    (plyty-glowne (nazwa "MSI")(typ_gniazda "LW1505")(procesor "Intel i7"))
+    (plyty-glowne (nazwa "Asus")(typ_gniazda "LW1506")(procesor "Intel i7"))
+    (plyty-glowne (nazwa "American Motherboard")(typ_gniazda "LW1505")(procesor "AMD Ryzerx"))
+    (plyty-glowne (nazwa "Acer")(typ_gniazda "LW1507")(procesor "AMD Athlon"))
+    )
+(defrule plyty_dla_intela
+    (plyty-glowne (nazwa ?n)(procesor ?p &: (eq ?p "Intel i7")))
+    =>
+    (printout t "Dla " ?p " pasuje p³yta " ?n crlf)
+    );
+(defrule plyty_dla_lw1505_nie_intel
+    (plyty-glowne (nazwa ?n)(procesor ?p &: (neq ?p "Intel i7"))(typ_gniazda ?t &: (eq ?t "LW1505")))
+    =>
+    (printout t "Do typu gniazda (oprócz Intela) " ?t " pasuje " ?p crlf)
+    );
+(reset)
+(run)

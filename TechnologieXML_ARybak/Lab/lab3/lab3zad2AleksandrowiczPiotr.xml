@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TVSHEDULE [
+
+	<!ELEMENT TVSHEDULE (CHANNEL+)>
+	<!ELEMENT CHANNEL (BANNER, DAY+)>
+	<!ELEMENT BANNER (#PCDATA)>
+	<!ELEMENT DAY (DATE, (HOLIDAY|PROGRAMSLOT+)+)>
+	<!ELEMENT HOLIDAY (#PCDATA)>
+	<!ELEMENT DATE (#PCDATA)>
+	<!ELEMENT PROGRAMSLOT (TIME, TITLE, DESCRIPTION?)>
+	<!ELEMENT TIME (#PCDATA)>
+	<!ELEMENT TITLE (#PCDATA)>
+	<!ELEMENT DESCRIPTION (#PCDATA)>
+
+	<!ATTLIST TVSHEDULE name CDATA #REQUIRED>
+	<!ATTLIST CHANNEL chan CDATA #REQUIRED>
+	<!ATTLIST PROGRAMSLOT vtr CDATA #IMPLIED>
+	<!ATTLIST TITLE rating CDATA #IMPLIED>
+	<!ATTLIST TITLE language CDATA #IMPLIED>
+
+]>
+
+<TVSHEDULE name="polskaTelewizja">
+	<CHANNEL chan="telewizjaPolskaKanal1">
+		<BANNER>TVP1</BANNER>
+		<DAY>
+			<DATE>23.01.2017</DATE>			
+			<PROGRAMSLOT>
+				<TIME>17:00</TIME>
+				<TITLE rating="5" language= "polski">Teleexpress</TITLE>
+				<DESCRIPTION>Wiadomości</DESCRIPTION>
+			</PROGRAMSLOT>
+			<PROGRAMSLOT>
+				<TIME>17:15</TIME>
+				<TITLE rating="4" language= "polski">Pogoda</TITLE>
+				<DESCRIPTION>Prognoza pogody</DESCRIPTION>
+			</PROGRAMSLOT>
+		</DAY>
+		<DAY>
+			<DATE>24.01.2017</DATE>			
+			<PROGRAMSLOT>
+				<TIME>06:00</TIME>
+				<TITLE>Dzień dobry, Polsko!</TITLE>
+				<DESCRIPTION>Magazyn</DESCRIPTION>
+			</PROGRAMSLOT>
+			<PROGRAMSLOT>
+				<TIME>08:00</TIME>
+				<TITLE >Wiadomości</TITLE>
+				<DESCRIPTION>Wiadomości poranne</DESCRIPTION>
+			</PROGRAMSLOT>
+		</DAY>
+	</CHANNEL>
+	<CHANNEL chan="polsat">
+		<BANNER>Polsat</BANNER>
+		<DAY>
+			<DATE>23.01.2017</DATE>			
+			<PROGRAMSLOT>
+				<TIME>09:30</TIME>
+				<TITLE language= "polski">Malanowski i partnerzy</TITLE>
+				<DESCRIPTION>Serial fabularny</DESCRIPTION>
+			</PROGRAMSLOT>
+			<PROGRAMSLOT>
+				<TIME>10:00</TIME>
+				<TITLE rating="2">Dzień, który zmienił moje życie</TITLE>
+			</PROGRAMSLOT>
+			<PROGRAMSLOT>
+				<TIME>11:00</TIME>
+				<TITLE rating="1">Dlaczego ja?</TITLE>
+			</PROGRAMSLOT>
+		</DAY>
+		<DAY>
+			<DATE>24.01.2017</DATE>			
+			<PROGRAMSLOT>
+				<TIME>18:50</TIME>
+				<TITLE language= "polski">Wydarzenia</TITLE>
+				<DESCRIPTION>Wiadomości</DESCRIPTION>
+			</PROGRAMSLOT>
+			<PROGRAMSLOT>
+				<TIME>19.20</TIME>
+				<TITLE language= "polski">Sport</TITLE>
+				<DESCRIPTION>Wiadomości</DESCRIPTION>
+			</PROGRAMSLOT>
+		</DAY>
+	</CHANNEL>
+</TVSHEDULE>
