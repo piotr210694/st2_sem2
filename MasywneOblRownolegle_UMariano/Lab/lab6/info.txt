@@ -1,0 +1,7 @@
+Zagnieżdżona równoległość w zast. interfejsu OpenMP
+kontynuacja sortowania tablicy
+
+Zagniezdzona petla
+env OMP_NUM_THREADS=4 OMP_NESTED="true" ./prog
+lub w programie
+omp_set_nested(1);
