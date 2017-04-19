@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Uczelnia"
+		xmlns="https://www.w3schools.com"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="https://www.w3schools.com lab4zad2AleksandrowiczPiotr.xsd"
+		elementFormDefault="qualified">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Wydzial" maxOccurs="unbounded" minOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Nazwa">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:string" name="PelnaNazwa"/>
+										<xs:element type="xs:string" name="Skrot"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element type="xs:string" name="Uwagi"/>
+						</xs:sequence>
+						<xs:attribute type="xs:string" name="ulica" use="required"/>
+						<xs:attribute type="xs:byte" name="numer" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute type="xs:int" name="telefon" use="required"/>
+			<xs:attribute type="xs:string" name="email" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

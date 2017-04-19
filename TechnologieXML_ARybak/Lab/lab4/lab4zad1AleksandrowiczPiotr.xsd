@@ -1,53 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-	<xs:element name="MistrzostwaŚwiata">
-		<xs:element name="Rajd"></xs:element>
-			<xs:element name="Rajd"></xs:element>
+	<xs:element name="MistrzostwaŚwiata"
+		xmlns="https://www.w3schools.com"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="https://www.w3schools.com lab4zad1AleksandrowiczPiotr.xsd"
+		elementFormDefault="qualified">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element name="Rajd" maxOccurs="unbounded" minOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Zawody">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Zaloga">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Kierowca" type="xs:string"></xs:element>
+													<xs:element name="Pilot" type="xs:string"></xs:element>
+													<xs:element name="Czas" type="xs:string"></xs:element>
+												</xs:sequence>
+												<xs:attribute type="xs:string" name="nazwa" use="required"/>
+												<xs:attribute type="xs:string" name="samochód" use="required"/>
+												<xs:attribute type="xs:string" name="narodowość" use="required"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute type="xs:string" name="dataRozpoczecia" use="required"/>
+									<xs:attribute type="xs:string" name="dataZakonczenia" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute type="xs:string" name="nazwa" use="required"/>
+						<xs:attribute type="xs:string" name="kraj" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
 	</xs:element>
 </xs:schema>
-
-
-<MistrzostwaŚwiata>
-<![CDATA[Poniżej znajdują się zwycięzcy poszczególnych zawodów, które odbywały się w 2016 roku w ramach Mistrzostw Świata!]]>
-	<Rajd nazwa="PZM Rajd Polski" kraj="Polska">
-		<Zawody dataRozpoczecia="14-06-2016" dataZakonczenia="22-06-2016">
-			<Zaloga nazwa="M-SPORT World Rally Team" samochód="Volkswagen" narodowość="Polska">
-				<Kierowca>Robert Kubica</Kierowca>
-				<Pilot>Krzysztof &apos;Hołek&apos; Hołowczyc</Pilot>
-				<Czas>1:50.20</Czas>
-			</Zaloga>
-		</Zawody>
-		<OpisRajdu>Rajd Polski &quot;M-SPORT World Rally Team&quot; odbywa się na terenie dwóch województw: Warmińsko - Mazurskiego oraz Podlaskiego</OpisRajdu>
-	</Rajd>
-	<Rajd nazwa="Rajd Szwecji" kraj="Szwecja">
-		<Zawody dataRozpoczecia="08-07-2016" dataZakonczenia="15-07-2016">
-			<Zaloga nazwa="DMAC World Rally Team" samochód="Renault" narodowość="Włochy">
-				<Kierowca>Edvin Lorenzo</Kierowca>
-				<Pilot>Kevin Abbring</Pilot>
-				<Czas>2:05.18</Czas>
-			</Zaloga>
-		</Zawody>
-		<OpisRajdu></OpisRajdu>
-	</Rajd>
-	<Rajd nazwa="Adac Rajd Niemiec" kraj="Niemcy">
-		<Zawody dataRozpoczecia="19-07-2016" dataZakonczenia="25-07-2016">
-			<Zaloga nazwa="Hyundai Motorsport" samochód="Hyundai" narodowość="Anglia">
-				<Kierowca>Thierry Nevile</Kierowca>
-				<Pilot>Mads Ostberg</Pilot>
-				<Czas>2:01.10</Czas>
-			</Zaloga>
-		</Zawody>
-		<OpisRajdu>Rajd Niemiec wiedzie przez zakątki pięknej Bawarii</OpisRajdu>
-	</Rajd>
-	<Rajd nazwa="Rajd RACC Katalonia" kraj="Hiszpania">
-		<Zawody dataRozpoczecia="10-08-2016" dataZakonczenia="19-08-2016">
-			<Zaloga nazwa="Jipocar Czech National Team" samochód="Skoda" narodowość="Czechy">
-				<Kierowca>Eric Camilli</Kierowca>
-				<Pilot>Martin Prokop</Pilot>
-				<Czas>1:43.44</Czas>
-			</Zaloga>
-		</Zawody>
-		<OpisRajdu></OpisRajdu>
-	</Rajd>
-	<?javascript alert("Dzięki informacjom tu zawartym dowiemy się na temat 4 zwycięzców poszczególnych zawodów"); ?>
-</MistrzostwaŚwiata>
