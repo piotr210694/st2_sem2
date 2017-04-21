@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Rajdowe Mistrzostwa Świata WRC i zwycięzcy w danych zawodach -->
 <MistrzostwaŚwiata>
-<![CDATA[Poniżej znajdują się zwycięzcy poszczególnych zawodów, które odbywały się w 2016 roku w ramach Mistrzostw Świata!]]>
 	<Rajd nazwa="PZM Rajd Polski" kraj="Polska">
 		<Zawody dataRozpoczecia="14-06-2016" dataZakonczenia="22-06-2016">
 			<Zaloga nazwa="M-SPORT World Rally Team" samochód="Volkswagen" narodowość="Polska">

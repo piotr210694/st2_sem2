@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <!DOCTYPE MistrzostwaŚwiata [
 
 	<!ELEMENT MistrzostwaŚwiata (Rajd+)>
@@ -18,3 +20,49 @@
 	<!ATTLIST Zaloga kraj CDATA #REQUIRED>
 
 ]>
+
+<!-- Rajdowe Mistrzostwa Świata WRC i zwycięzcy w danych zawodach -->
+<MistrzostwaŚwiata>
+<![CDATA[Poniżej znajdują się zwycięzcy poszczególnych zawodów, które odbywały się w 2016 roku w ramach Mistrzostw Świata!]]>
+	<Rajd nazwa="PZM Rajd Polski" kraj="Polska">
+		<Zawody dataRozpoczecia="14-06-2016" dataZakonczenia="22-06-2016">
+			<Zaloga nazwa="M-SPORT World Rally Team" samochod="Volkswagen" narodowość="Polska">
+				<Kierowca>Robert Kubica</Kierowca>
+				<Pilot>Krzysztof &apos;Hołek&apos; Hołowczyc</Pilot>
+				<Czas>1:50.20</Czas>
+			</Zaloga>
+		</Zawody>
+		<OpisRajdu>Rajd Polski &quot;M-SPORT World Rally Team&quot; odbywa się na terenie dwóch województw: Warmińsko - Mazurskiego oraz Podlaskiego</OpisRajdu>
+	</Rajd>
+	<Rajd nazwa="Rajd Szwecji" kraj="Szwecja">
+		<Zawody dataRozpoczecia="08-07-2016" dataZakonczenia="15-07-2016">
+			<Zaloga nazwa="DMAC World Rally Team" samochod="Renault" narodowość="Włochy">
+				<Kierowca>Edvin Lorenzo</Kierowca>
+				<Pilot>Kevin Abbring</Pilot>
+				<Czas>2:05.18</Czas>
+			</Zaloga>
+		</Zawody>
+		<OpisRajdu></OpisRajdu>
+	</Rajd>
+	<Rajd nazwa="Adac Rajd Niemiec" kraj="Niemcy">
+		<Zawody dataRozpoczecia="19-07-2016" dataZakonczenia="25-07-2016">
+			<Zaloga nazwa="Hyundai Motorsport" samochod="Hyundai" narodowość="Anglia">
+				<Kierowca>Thierry Nevile</Kierowca>
+				<Pilot>Mads Ostberg</Pilot>
+				<Czas>2:01.10</Czas>
+			</Zaloga>
+		</Zawody>
+		<OpisRajdu>Rajd Niemiec wiedzie przez zakątki pięknej Bawarii</OpisRajdu>
+	</Rajd>
+	<Rajd nazwa="Rajd RACC Katalonia" kraj="Hiszpania">
+		<Zawody dataRozpoczecia="10-08-2016" dataZakonczenia="19-08-2016">
+			<Zaloga nazwa="Jipocar Czech National Team" samochod="Skoda" narodowość="Czechy">
+				<Kierowca>Eric Camilli</Kierowca>
+				<Pilot>Martin Prokop</Pilot>
+				<Czas>1:43.44</Czas>
+			</Zaloga>
+		</Zawody>
+		<OpisRajdu></OpisRajdu>
+	</Rajd>
+	<?javascript alert("Dzięki informacjom tu zawartym dowiemy się na temat 4 zwycięzców poszczególnych zawodów"); ?>
+</MistrzostwaŚwiata>

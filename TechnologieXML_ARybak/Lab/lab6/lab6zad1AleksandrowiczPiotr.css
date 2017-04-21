@@ -1,0 +1,77 @@
+math
+{
+	background-color: #fde8c2;
+	
+	padding: 20px;
+	
+	margin: 0;
+}
+
+naglowek
+{
+	font-weight: bold;
+	font-size: 25px;
+}
+
+opis_strony
+{
+	display: block;
+	
+	margin-bottom: 15px;
+}
+
+zagadnienie
+{
+	display: block;
+	margin-bottom: 20px;
+	
+	border: 1px dotted gray;
+	padding: 10px;
+	opacity: 0.6;
+}
+
+zagadnienie:hover
+{
+	opacity: 1;
+	background: #facd7e;
+}
+
+tytul
+{
+	font-weight: bold;
+}
+
+
+links
+{	
+	border: 2px dotted orange;
+	float: right;
+}
+
+link
+{
+	color: gray;
+	padding: 10px;
+	opacity: 0.5;
+}
+
+link:hover
+{
+	padding: 10px;
+	
+	opacity: 1;
+}
+
+opis
+{
+	display: block;
+	
+	padding-top: 5px;
+	padding-bottom: 5px;	
+}
+
+wzor
+{
+	display: block;
+	letter-spacing: 0.3mm; 
+}
