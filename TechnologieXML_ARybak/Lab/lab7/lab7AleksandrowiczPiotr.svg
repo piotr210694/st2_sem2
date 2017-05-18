@@ -1,0 +1,30 @@
+<svg width="620" height="550" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="277" width="312" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" height="70" width="76" y="20.95" x="23.5" stroke-width="0" stroke="#000" fill="#ff370a"/>
+  <rect id="svg_2" height="70" width="76" y="97" x="23.5" stroke-width="0" stroke="#000" fill="#56aaff"/>
+  <rect id="svg_3" height="70" width="76" y="19.95" x="107" stroke-width="0" stroke="#000" fill="#8abc00"/>
+  <rect id="svg_4" height="70" width="76" y="97" x="107" stroke-width="0" stroke="#000" fill="#ffcc00"/>
+  <text xml:space="preserve" text-anchor="start" font-family="'Shadows Into Light', serif" font-size="47" id="svg_5" y="110.80714" x="214.57143" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#7c7c7c">MICROSOFT</text>
+  <ellipse fill="#3b5998" stroke="#3b5998" ry="70.09349" rx="70.32714" id="svg_28" cy="261.21508" cx="103.9066" fill-opacity="null" stroke-opacity="null" stroke-width="NaN"/>
+  <text fill="#ffffff" stroke="#000" stroke-width="0" stroke-opacity="null" x="86.5" y="332.95" id="svg_6" font-size="141" font-family="Euphoria, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">f</text>
+  <text font-style="normal" opacity="0.85" fill="#ffffff" stroke="#3b5998" stroke-width="3" stroke-opacity="null" x="209.72499" y="295" id="svg_7" font-size="78" font-family="Euphoria, sans-serif" text-anchor="start" xml:space="preserve">facebook</text>
+  <ellipse ry="90" rx="90" id="svg_8" cy="450.45" cx="109.5" stroke-width="43" stroke="#ffffff" fill="#ff007f"/>
+  <ellipse ry="54" rx="54" id="svg_9" cy="450.95" cx="108.5" stroke-width="5" stroke="#ffffff" fill="#ff007f"/>
+  <ellipse ry="5" rx="5" id="svg_11" cy="428.45" cx="88.5" stroke-width="5" stroke="#ffffff" fill="#ffffff"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_12" y2="442.00001" x2="122.00001" y1="387.50001" x1="121.50001" stroke-width="24" stroke="#ff007f" fill="none"/>
+  <line transform="rotate(90.569, 139.75, 438.25)" stroke-linecap="null" stroke-linejoin="null" id="svg_13" y2="465.50001" x2="140.00001" y1="411.00001" x1="139.50001" stroke-width="24" stroke="#ff007f" fill="none"/>
+  <line transform="rotate(137.222, 142.635, 415.107)" stroke-linecap="null" stroke-linejoin="null" id="svg_14" y2="438.24596" x2="144.11415" y1="391.96755" x1="141.15485" stroke-width="24" stroke="#ff007f" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_15" y2="450" x2="165" y1="450" x1="123.5" stroke-width="6" stroke="#ffffff" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_16" y2="482" x2="105.5" y1="420.5" x1="105.5" fill-opacity="null" stroke-opacity="null" stroke-width="5" stroke="#ffffff" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_17" y2="479.5" x2="128" y1="479.5" x1="104" fill-opacity="null" stroke-opacity="null" stroke-width="5" stroke="#ffffff" fill="none"/>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Euphoria, sans-serif" font-size="141" id="svg_18" y="499.45949" x="227.56758" stroke-width="0" stroke="#ffffff" fill="#878787">LG</text>
+  <text font-weight="normal" xml:space="preserve" text-anchor="start" font-family="Junction, sans-serif" font-size="28" id="svg_19" y="532.43247" x="237.29731" stroke-width="0" stroke="#ffffff" fill="#878787">Life's Good</text>
+ </g>
+</svg>
