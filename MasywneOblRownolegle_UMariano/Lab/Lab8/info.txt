@@ -1,0 +1,11 @@
+Algorytm równoległy wyznaczania liczb pierwszych.
+Problem: wyznaczyć wszystkie liczby pierwsze z przedziału [2 ... n].
+Gdzie: n -> duża liczba całkowita
+
+Algorytm sekwencyjny:
+    2 etapy dzielmy przedział [2 .. n] na 2 podprzedziały
+        etap A: [2 .. sqrt(n)]
+        etap B: [sqrt(n) + 1 .. n]
+
+W przedziale A wyznacza się liczby pierwsze zwane podzielnikami
+stosując tzw. sito Eratostenesa

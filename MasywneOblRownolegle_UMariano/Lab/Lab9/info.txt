@@ -1,0 +1,22 @@
+lab9mpi.c
+
+Program znajdowania liczb pierwszych z uzyciem biblioteki MPI
+Funkcja:
+    int MPI_Gatherv(
+        void *sendBuf,
+        int sendCnt,
+        MPI_Datatype sendType,
+        void *recvBuf,
+        int *recvCnts,
+        int *displs,
+        MPI_Datatype recvType,
+        int root,
+        MPI_Comm comm
+    )
+
+*recvCnts - Tablica liczb całkowitych o rozmiarze takim jak liczba procesow.
+            Określa ile elementów ma być odebrane od każdego procesu.
+
+*displs - Tablica liczb całkowitych o rozmiarze takim jak liczba procesow.
+          Określa przesunięcia w stosunku do recvBuf dzięki czemu wiadomo,
+          gdzie mają być zapisane dane od poszczegolnych procesow.

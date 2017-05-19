@@ -1,0 +1,19 @@
+Tablica procesów n x n
+W[1 .. n, 1 .. n]
+
+Element w[i, j] będzie równy 1, jeśli
+spełniony będzie warunek a[i] > a[j] a równy 0, gdy niespełnia
+ind[i]++
+
+Sumy wartości elementów w w poszczegolnych indeksach tablei, w
+wyznaczaja indeksy okreslajace miejsca w tablicy b[1 .. n], w 
+ktorych nalezy umiescich elementy tablicy a[1 .. n].
+
+Komunikator domyslny: MPI_COMM_WORLD
+Potrzebne komunikatory wierszy i kolumn j.
+Do tego celu uzyjemy funkcji MPI: 
+int MPI_Comm_split(
+    MPI_Comm staryKom,
+    int kluczPodzialu,
+    int numerProcesu,
+    MPI_Comm nowyKom);
