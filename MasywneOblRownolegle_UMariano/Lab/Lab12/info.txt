@@ -1,0 +1,9 @@
+==l12.c==
+Rozwiązywanie układu równań liniowych.
+Metodą eliminacji Gaussa.
+
+ETAP I - eliminacja zmiennych.
+ETAP II - postępowanie odwrotne
+Ogólnie - Zapis matematyczny macierz A razy wektor X = wektor B
+A * X = B
+

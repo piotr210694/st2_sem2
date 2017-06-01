@@ -1,0 +1,2 @@
+======l13.c=======
+Metoda Gaussa-Jordana
